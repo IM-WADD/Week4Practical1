@@ -1,4 +1,4 @@
-# Week 4 Practical 1 - JavaScript Fundamentals
+# Week 4 Practical 1 - DOM Manipulation
 
 The aim of this week's practical is to get you up to speed on the fundamentals of DOM manipulation and modern ES6 JavaScript. These instructions are looooong but that's because they provide a lot more detail on the steps than we normally give you!
 
