@@ -1,15 +1,17 @@
-# Practical 13 (week 7, practical 1) - JavaScript Fundamentals
+# Week 4 Practical 1 - JavaScript Fundamentals
 
-The aim of this week's practical is to get you up to speed on the fundamentals of DOM manipulation and modern ES6 JavaScript. These instructions are looooong but that's because it provides a lot more detail on the steps than we normally give you!
+The aim of this week's practical is to get you up to speed on the fundamentals of DOM manipulation and modern ES6 JavaScript. These instructions are looooong but that's because they provide a lot more detail on the steps than we normally give you!
+
+Stage 1 and 2 should be quick. Stage 3 (the clocks exercise) will likely take more time than we have in class but you're encouraged to complete it. A sample solution will be posted after class as usual.
 
 ## Stage 1: DOM manipulation with JavaScript
 
 ### Exercise 1.1: Running JavaScript in the Chrome Console
 Run the index.html file in the stage1-2 folder in Chrome.
 
-Next, open the Chrome console. There are a few ways to do this. One way is to right-click on the webpage and choose "Inspect" from the contextual menu. Then, in the Developer Tools pane, select the Console tab, which should be right next to the Elements tab. When you open the console, you might see errors or warnings. You can ignore these. 
+Next, open the Chrome console. Reminder: right-click on the webpage and choose "Inspect" from the contextual menu. Then, in the Developer Tools pane, select the Console tab, which should be right next to the Elements tab. When you open the console, you might see errors or warnings. You can ignore these. 
 
-You will write snippets of JavaScript in the console to assess the composition of the page. Type JavaScript in the console to answer each of the questions below. You could answer all questions by just looking at the code but the goal here is to try out selecting DOM elements with JavaScript.
+**You will write snippets of JavaScript in the console to assess the composition of the page. Type JavaScript in the console to answer each of the questions below.** You could answer all questions by just looking at the code but the goal here is to try out selecting DOM elements with JavaScript.
 
 1.	**How many paragraphs does the page have?** Type `document.getElementsByTagName('p');` into the console, then press Enter. To type in the console, put your cursor by the little blue carat (>). This will print HTMLCollection followed by a number. The number is the number of elements retrieved by the method i.e., if you see HTMLCollection(2), that means there are 2 paragraphs in the page. An HTMLCollection is effectively an array that stores only HTML elements. 
 
@@ -73,7 +75,7 @@ Connect it to index.html by adding the following tag as the last child element i
 <script src="main.js"></script>
 ```
 
-`console.log("message here")` is the JavaScript equivalent of `println()` in Processing. A key difference is that any messages you print will show up in the *browser console*, not VS Code. Check your console—you should see "Hello, World!".
+Hopefully you remember from PDM that `console.log("message here")` prints a message to the *browser console* (not VS Code). Check your console—you should see "Hello, World!".
 
 Remove the `console.log()` and add some code that will replace the placeholder text in the navigation list items with real links. Where the links lead to to doesn't matter—the main goal is to manipulate the DOM with JavaScript.
 
@@ -83,7 +85,7 @@ Here are some useful pages to help you with the syntax:
 - [W3Schools: adding DOM elements](https://www.w3schools.com/js/js_htmldom_html.asp)
 
 ## Stage 3: Animating a webpage with JavaScript
-This stage is **very** challenging if you are new to JavaScript, so there is a lot of detail in the instructions. You can also find extra hints and guidance in the [extraHelp.md](./extraHelp.md) page.
+This stage is **very** challenging if your JavaScript is rusty, so there is a lot of detail in the instructions. You can also find extra hints and guidance in the [extraHelp.md](./extraHelp.md) page.
 
 You will use JavaScript to animate analogue clock faces to display the time in two different time zones. A video of the final animation is included in this repo. Each exercise below takes you through one aspect of the task. Within each exercise, you will find links to extra help on the maths involved but try not to use it until you've attempted it on your own! 
 
@@ -183,7 +185,7 @@ clock.getElementsByClassName("hour")[0].style.transform = "translateX(100px) rot
 
 Still working inside your `updateClock` function, select the AM/PM div inside the clock face. From exercise 3.1, you should know that each of these divs has a unique ID. Your code will need to work for *either clock*. You can use the `clockId` parameter to work out the ID of the AM/PM label that you want to change. No hints are provided here—you can concatenate a variable and a string the same way that you would in Processing or C#. 
 
-Set the `innerText` (or `innerHTML`) property of the current clock's AM / PM div to display "AM" if it's the morning and "PM" if it's the afternoon. Try using a ternary rather than an if statement. You will have seen a ternary in Programming for Digital Media but you might not have written one yourself. The statement should look something like this:
+Set the `innerText` (or `innerHTML`) property of the current clock's AM / PM div to display "AM" if it's the morning and "PM" if it's the afternoon. Try using a ternary rather than an if statement. You will have seen a ternary in previous modules but you might not have written one yourself. The statement should look something like this:
 
 '''
 selectedElement.innerText = boolean_expression ? "value if true" : "value if false";
