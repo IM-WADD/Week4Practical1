@@ -227,16 +227,16 @@ setInterval(function () {
 }, 1000);
 ```
 
-(Optional) Stage 4: JavaScript extension activities
+## (Optional) Stage 4: JavaScript extension activities
 
 If you would like more practice with JavaScript, try these three exercises.
 
-(Optional) Exercise 4.1: Change a clock's colour scheme according to time of day
+### (Optional) Exercise 4.1: Change a clock's colour scheme according to time of day
 
 Use JavaScript to change the colour scheme of an individual clock to visually indicate if it is day or nighttime. You can choose day / night boundaries that make sense to you. For example, you might decide that night is from 9pm to 8am.
 
-(Optional) Exercise 4.2: Add more clocks with JavaScript
+### (Optional) Exercise 4.2: Add more clocks with JavaScript
 Use JavaScript to add more clocks displaying the times of cities in different time zones. 
 
-(Optional) Exercise 4.3: Use JavaScript to display the real date and time on the York University Press site
+### (Optional) Exercise 4.3: Use JavaScript to display the real date and time on the York University Press site
 Go back to the last version of the York University Press site and replace the hard-coded string date in the header with the real date and time using JavaScript.
