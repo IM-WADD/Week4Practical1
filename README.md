@@ -183,7 +183,7 @@ clock.getElementsByClassName("hour")[0].style.transform = "translateX(100px) rot
 
 ### Exercise 3.6: Add the AM / PM label
 
-Still working inside your `updateClock` function, select the AM/PM div inside the clock face. From exercise 3.1, you should know that each of these divs has a unique ID. Your code will need to work for *either clock*. You can use the `clockId` parameter to work out the ID of the AM/PM label that you want to change. No hints are provided here—you can concatenate a variable and a string the same way that you would in Processing or C#. 
+Still working inside your `updateClock` function, select the AM/PM div inside the clock face. From exercise 3.1, you should know that each of these divs has a unique ID. Your code will need to work for *either clock*. You can use the `clockId` parameter to work out the ID of the AM/PM label that you want to change. No hints are provided here—you can concatenate a variable and a string the same way that you would in p5.js or C#. 
 
 Set the `innerText` (or `innerHTML`) property of the current clock's AM / PM div to display "AM" if it's the morning and "PM" if it's the afternoon. Try using a ternary rather than an if statement. You will have seen a ternary in previous modules but you might not have written one yourself. The statement should look something like this:
 
