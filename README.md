@@ -187,9 +187,9 @@ Still working inside your `updateClock` function, select the AM/PM div inside th
 
 Set the `innerText` (or `innerHTML`) property of the current clock's AM / PM div to display "AM" if it's the morning and "PM" if it's the afternoon. Try using a ternary rather than an if statement. You will have seen a ternary in previous modules but you might not have written one yourself. The statement should look something like this:
 
-'''
+```
 selectedElement.innerText = boolean_expression ? "value if true" : "value if false";
-'''
+```
 
 ### Exercise 3.7: Update the clocks every second
 
